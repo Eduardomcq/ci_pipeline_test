@@ -23,6 +23,9 @@ jobs:
             
             - name: Roda outro comando
               run: echo $(ls)
+            
+            - name: Instala libs
+              run: pip install -r requirements.txt
 
 
 
