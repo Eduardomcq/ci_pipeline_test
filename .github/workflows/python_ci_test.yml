@@ -28,8 +28,10 @@ jobs:
               run: pip install -r requirements.txt
 
             - name: Executar testes
-              run: cd /tests && python -B -m pytest
+              working-directory: ./tests
+              run: python -m pytest
 
 
 
 
+ 
