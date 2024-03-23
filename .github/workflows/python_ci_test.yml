@@ -14,8 +14,17 @@ jobs:
             - name: Copia arquivos
               uses: actions/checkout@v4
             
+            
+            
+            - name: Setup python
+              uses: actions/setup-python@v4
+              with:
+                python-version: 3.10.8
+            
             - name: Roda outro comando
               run: echo $(ls)
+
+
 
             # - uses: actions/setup-python@v4
             #   with: 
