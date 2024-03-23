@@ -27,12 +27,9 @@ jobs:
             - name: Instala libs
               run: pip install -r requirements.txt
 
+            - name: Executar testes
+              run: python -B -m pytest
 
 
-            # - uses: actions/setup-python@v4
-            #   with: 
-            #     python-version: 3.10.8
-            #     cache: pip
-            # - run: pip install pytest      
-            # - run: python -B -m pytest
+
 
